@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <title>Maček - Kontakt</title>
+    <link rel="stylesheet" href="kontakt.css">
+    <link rel="icon" href="../../slike/Logo.png" type="image/x-icon">
+</head>
+<body>
+
+    <svg>
+        <defs>
+            <clipPath id="clipPath">
+                <circle class="glavniKrug" cx="0" cy="0" r="2500" transform="scale(0)" />
+            </clipPath>
+        </defs>
+    </svg>
+
+    <button id="meni" class="otvori"><img src="assets/burger.png" class="burger"></button>
+    <nav class="kontaktNav">
+        <div>
+        <button id="menu" class="zatvori"><img src="assets/iks.png" class="iks"></button>
+            <ul>
+                <li><a href="../../">Početna</a></li>
+                <li><a href="../novosti/">Novosti</a></li>
+                <li><a href="../kontakt/">Kontakt</a></li>
+                <li><a href="../omeni/">O meni</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="kontaktGlav">
+        <div class="naslov"><h2>Kontaktiraj me</h2></div>
+        
+        <div class="forma">
+            <form action="" method="POST">
+                <div class="floating-label-wrap">
+                    <input name="ime" type="text" id="ime" placeholder="Ime i prezime" class="floating-label-field floating-label-field--s3">
+                    <label for="ime" class="floating-label">Ime i prezime</label>
+                </div>
+
+                <div class="floating-label-wrap">
+                    <input name="email" type="email" id="eadresa" placeholder="E-mail" class="floating-label-field floating-label-field--s3">
+                    <label for="eadresa" class="floating-label">E-mail</label>
+                </div>
+
+                <div class="floating-label-wrap">
+                    <input name="tema" type="text" id="tema" placeholder="Tema" class="floating-label-field floating-label-field--s3">
+                    <label for="tema" class="floating-label">Tema</label>
+                </div>
+
+                <div class="floating-label-wrap">
+                    <textarea name="poruka" id="poruka" placeholder="Poruka" class="floating-label-field floating-label-field--s3"></textarea>
+                    <label for="poruka" class="floating-label">Poruka</label>
+                </div>
+
+                <div class="gumb">
+                    <input type="submit" name="submit" class="btn btn1" value="Pošalji poruku">
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <script src="../../skripte/gsap.min.js"></script>
+
+    <script>
+
+        var anim = new TimelineMax();
+        var timenav = new TimelineMax({paused:true});
+
+        document.getElementById('meni').addEventListener('click',() => {
+                this.timenav.play();
+            })
+
+            document.getElementById('menu').addEventListener('click',() => {
+                this.timenav.reverse();
+            })
+
+        if (screen.width<=1700) {
+
+            document.getElementById('meni').addEventListener('click',() => {
+                this.timenav.play();
+            })
+
+            document.getElementById('menu').addEventListener('click',() => {
+                this.timenav.reverse();
+            })
+
+            timenav.from("nav", 1, {
+                opacity: 0,
+                x: 100,
+                display: 'none',
+                ease: Power2.easeOut,
+                delay: 0
+            });
+        }
+
+        anim.to("circle.glavniKrug", 3, {
+            scale: 1.5,
+            x: 2000,
+            y: 500,
+            ease: Power2.easeOut
+        });
+        
+    </script>
+
+</body>
+</html>

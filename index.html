@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <title>Maček</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="slike/Logo.png" type="image/x-icon">
+</head>
+<body>
+
+    <svg>
+        <defs>
+            <clipPath id="clipPath">
+                <circle class="one" cx="200" cy="400" r="1300" transform="scale(0)" />
+                <circle class="two" cx="-2200" cy="1900" r="800" transform="scale(0)" />
+            </clipPath>
+        </defs>
+    </svg>
+
+    <button id="meni" class="otvori"><img src="slike/burger.png" class="burger"></button>
+    <div class="navigacija">
+        <nav>
+            <button id="menu" class="zatvori"><img src="slike/iks.png" class="iks"></button>
+            <ul>
+                <li><a href=".">Početna</a></li>
+                <li><a href="Stranice/novosti/">Novosti</a></li>
+                <li><a href="Stranice/kontakt/">Kontakt</a></li>
+                <li><a href="Stranice/omeni/">O meni</a></li>
+            </ul>
+
+            <p>Ovo je moja osobna stranica, ako ne znate tko sam ja ime mi piše velikim slovima na lijevom dijelu stranice. Stranica ima neke jako napredne elementa poput ove pozadinske slike za koju su mi bili potrebni mnogobrojni sati da ju postavim.</p>
+        </nav>
+    </div>
+
+    <h1>Andrija Maček</h1>
+
+    <script src="skripte/gsap.min.js"></script>
+
+    <script>
+
+        var tl = new TimelineMax();
+        var tl1 = new TimelineMax();
+        var timenav = new TimelineMax({paused:true});
+
+        document.getElementById('meni').addEventListener('click',() => {
+            this.timenav.reverse();
+        })
+
+        document.getElementById('menu').addEventListener('click',() => {
+            this.timenav.play();
+        })
+
+        tl.from("nav", 1, {
+            x: 100,
+            display: 'none',
+            ease: Power2.easeOut,
+            delay: 0
+        });
+
+        timenav.to("nav", 1, {
+            opacity: 0,
+            x: 100,
+            display: 'none',
+            ease: Power2.easeOut,
+            delay: 0
+        });
+
+        tl.to("circle.one", 3, {
+            scale: 1,
+            x: 0,
+            y: -1300,
+            ease: Power2.easeOut
+        }, "-=1");
+
+        tl.to("circle.two", 4, {
+            scale: 1.8,
+            x: 2900,
+            y: -500,
+            ease: Power2.easeOut
+        }, "-=3");
+
+        tl1.from("h1", 1, {
+            opacity: 0,
+            y: 100,
+            ease: Bounce.easeOut,
+            delay: 0
+        }, "-=3.2");
+
+    </script>
+
+</body>
+</html>

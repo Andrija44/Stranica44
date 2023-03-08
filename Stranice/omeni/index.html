@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <title>Maček - O meni</title>
+    <link rel="stylesheet" href="omeni.css">
+    <link rel="icon" href="../../slike/Logo.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+</head>
+<body class="tijelo">
+
+    <div>
+        <button id="meni" class="otvori"><img src="assets/burger.png" class="burger"></button>
+        <div class="navigacija">
+            <nav>
+                <button id="menu" class="zatvori"><img src="assets/iks.png" class="iks"></button>
+                <ul>
+                    <li><a href="../../">Početna</a></li>
+                    <li><a href="../novosti/">Novosti</a></li>
+                    <li><a href="../kontakt/">Kontakt</a></li>
+                    <li><a href="../omeni/">O meni</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="parallax">
+        <div id="group2" class="parallaxGroup">
+            <div class="parallaxLayer parallaxLayer--base">
+                <div class="title">Ukratko o kreatoru ove stranice</div>
+            </div>
+            <div class="parallaxLayer parallaxLayer--back"></div>
+        </div>
+
+        <div id="group3" class="parallaxGroup">
+            <div class="parallaxLayer parallaxLayer--fore">
+                <div class="text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eaque repellendus fugiat at optio excepturi perspiciatis non rem aperiam consectetur quasi dolore, voluptatibus soluta veniam aut! Assumenda illo labore reiciendis!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, eligendi unde qui asperiores magnam accusantium, tempore quis deserunt voluptas doloremque cupiditate necessitatibus officiis quia maxime a ipsa ipsam praesentium natus!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, ducimus? Nesciunt provident quas nostrum, veniam numquam sint, quod dolorum repellat eum obcaecati, dolor deserunt officia ratione accusamus architecto reprehenderit voluptates.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ex eligendi est numquam officia quis ipsum aliquid dicta doloremque incidunt omnis quisquam modi voluptatibus at, perspiciatis corrupti explicabo iste itaque.</p>
+                </div>
+            </div>
+            <div class="parallaxLayer parallaxLayer--base"></div>
+        </div>
+
+        <div id="group4" class="parallaxGroup">
+            <div class="parallaxLayer parallaxLayer--back">
+                <div class="text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eaque repellendus fugiat at optio excepturi perspiciatis non rem aperiam consectetur quasi dolore, voluptatibus soluta veniam aut! Assumenda illo labore reiciendis!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, eligendi unde qui asperiores magnam accusantium, tempore quis deserunt voluptas doloremque cupiditate necessitatibus officiis quia maxime a ipsa ipsam praesentium natus!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, ducimus? Nesciunt provident quas nostrum, veniam numquam sint, quod dolorum repellat eum obcaecati, dolor deserunt officia ratione accusamus architecto reprehenderit voluptates.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ex eligendi est numquam officia quis ipsum aliquid dicta doloremque incidunt omnis quisquam modi voluptatibus at, perspiciatis corrupti explicabo iste itaque.</p>
+                </div>
+            </div>
+            <div class="parallaxLayer parallaxLayer--deep"></div>
+        </div>
+
+        <div id="group5" class="parallaxGroup">
+            <div class="parallaxLayer parallaxLayer--fore">
+                <div class="text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eaque repellendus fugiat at optio excepturi perspiciatis non rem aperiam consectetur quasi dolore, voluptatibus soluta veniam aut! Assumenda illo labore reiciendis!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, eligendi unde qui asperiores magnam accusantium, tempore quis deserunt voluptas doloremque cupiditate necessitatibus officiis quia maxime a ipsa ipsam praesentium natus!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, ducimus? Nesciunt provident quas nostrum, veniam numquam sint, quod dolorum repellat eum obcaecati, dolor deserunt officia ratione accusamus architecto reprehenderit voluptates.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ex eligendi est numquam officia quis ipsum aliquid dicta doloremque incidunt omnis quisquam modi voluptatibus at, perspiciatis corrupti explicabo iste itaque.</p>
+                </div>
+            </div>
+            <div class="parallaxLayer parallaxLayer--base"></div>
+        </div>
+
+        <div id="group6" class="parallaxGroup">
+            <div class="parallaxLayer parallaxLayer--base">
+                <div class="text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero eaque repellendus fugiat at optio excepturi perspiciatis non rem aperiam consectetur quasi dolore, voluptatibus soluta veniam aut! Assumenda illo labore reiciendis!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, eligendi unde qui asperiores magnam accusantium, tempore quis deserunt voluptas doloremque cupiditate necessitatibus officiis quia maxime a ipsa ipsam praesentium natus!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, ducimus? Nesciunt provident quas nostrum, veniam numquam sint, quod dolorum repellat eum obcaecati, dolor deserunt officia ratione accusamus architecto reprehenderit voluptates.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ex eligendi est numquam officia quis ipsum aliquid dicta doloremque incidunt omnis quisquam modi voluptatibus at, perspiciatis corrupti explicabo iste itaque.</p>
+                </div>
+            </div>
+            <div class="parallaxLayer parallaxLayer--back"></div>
+        </div>
+
+        <div id="group7" class="parallaxGroup">
+            <div class="parallaxLayer parallaxLayer--base">
+                <div class="title">Kraj</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../skripte/gsap.min.js"></script>
+
+    <script>
+        
+        var timel = new TimelineMax();
+        var timenav = new TimelineMax({paused:true});
+        
+
+        document.getElementById('meni').addEventListener('click',() => {
+            this.timenav.play();
+        })
+
+        document.getElementById('menu').addEventListener('click',() => {
+            this.timenav.reverse();
+        })
+
+        timenav.from("nav", 1, {
+            opacity: 0,
+            x: 100,
+            display: 'none',
+            ease: Power2.easeOut,
+            delay: 0
+        });
+
+        timel.from("body", 1, {
+            y: 1000,
+            display: 'none',
+            ease: Power2.easeOut,
+            delay: 0
+        });
+
+    </script>
+
+</body>
+</html>

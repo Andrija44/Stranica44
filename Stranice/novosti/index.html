@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <title>Maček - Novosti</title>
+    <link rel="stylesheet" href="novosti.css">
+    <link rel="icon" href="../../slike/Logo.png" type="image/x-icon">
+
+    <script>
+        function fadeInPage() {
+            if(!window.AnimationEvent) {
+                return;
+            }
+
+            var fader = document.getElementById('fader');
+            fader.classList.add('fadeOut');
+        }
+    </script>
+</head>
+<body>
+
+    <svg id="fader" class="fade-out"></svg>
+    <script>
+        fadeInPage();
+    </script>
+
+    <div class="wrap">
+        <nav class="navTop">
+            <div class="menu">
+                <ul>
+                    <li><a href="../../">Početna</a></li>
+                    <li><a href="../novosti/">Novosti</a></li>
+                    <li><a href="../kontakt/">Kontakt</a></li>
+                    <li><a href="../omeni/">O meni</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="articles container">
+
+        <div class="naslov">
+            <h1>NOVOSTI</h1>
+        </div>
+
+        <article class="news-item row bg_off-white">
+            <div class="media-wrapper col-md-5 order-md-2 position-relative overflow-hidden">
+                <a class="media d-block cover  w-100 h-100" href="objave/Objava1/" style="background-image: url(objave/Objava1/slika.jpg);"></a>
+            </div>
+            <div class="entry_txt col-md-7 d-flex justify-content-center flex-column p-4 order-2 order-md-1">
+                <a href="objave/Objava1/"><h3>Objava 1</h3></a>
+                <p class="summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, omnis quae nobis quia possimus totam optio consectetur corporis quisquam voluptate aut. Maxime dolorem iusto minima fugit voluptatibus accusamus neque pariatur.</p>
+                <p>3. ožujka 2021.</p>
+            </div>
+        </article>
+
+        <article class="news-item row bg_off-white">
+            <div class="media-wrapper col-md-5 order-md-2 position-relative overflow-hidden">
+                <a class="media d-block cover  w-100 h-100" href="objave/Objava2/" style="background-image: url(objave/Objava2/slika.png);"></a>
+            </div>
+            <div class="entry_txt col-md-7 d-flex justify-content-center flex-column p-4 order-2 order-md-1">
+                <a href="objave/Objava2/"><h3>Objava 2</h3></a>
+                <p class="summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, omnis quae nobis quia possimus totam optio consectetur corporis quisquam voluptate aut. Maxime dolorem iusto minima fugit voluptatibus accusamus neque pariatur.</p>
+                <p>2. ožujka 2021.</p>
+            </div>
+        </article>
+
+        <article class="news-item row bg_off-white">
+            <div class="media-wrapper col-md-5 order-md-2 position-relative overflow-hidden">
+                <a class="media d-block cover  w-100 h-100" href="objave/Objava3/" style="background-image: url(objave/Objava3/slika.png);"></a>
+            </div>
+            <div class="entry_txt col-md-7 d-flex justify-content-center flex-column p-4 order-2 order-md-1">
+                <a href="objave/Objava3/"><h3>Objava 3</h3></a>
+                <p class="summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, omnis quae nobis quia possimus totam optio consectetur corporis quisquam voluptate aut. Maxime dolorem iusto minima fugit voluptatibus accusamus neque pariatur.</p>
+                <p>1. ožujka 2021.</p>
+            </div>
+        </article>
+
+        <article class="news-item row bg_off-white">
+            <div class="media-wrapper col-md-5 order-md-2 position-relative overflow-hidden">
+                <a class="media d-block cover  w-100 h-100" href="objave/Objava4/" style="background-image: url(objave/Objava4/slika.jpg);"></a>
+            </div>
+            <div class="entry_txt col-md-7 d-flex justify-content-center flex-column p-4 order-2 order-md-1">
+                <a href="objave/Objava4/"><h3>Objava 4</h3></a>
+                <p class="summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, omnis quae nobis quia possimus totam optio consectetur corporis quisquam voluptate aut. Maxime dolorem iusto minima fugit voluptatibus accusamus neque pariatur.</p>
+                <p>1. ožujka 2021.</p>
+            </div>
+        </article>
+
+        <article class="news-item row bg_off-white">
+            <div class="media-wrapper col-md-5 order-md-2 position-relative overflow-hidden">
+                <a class="media d-block cover  w-100 h-100" href="objave/Objava5/" style="background-image: url(objave/Objava5/slika.jpg);"></a>
+            </div>
+            <div class="entry_txt col-md-7 d-flex justify-content-center flex-column p-4 order-2 order-md-1">
+                <a href="objave/Objava5/"><h3>Objava 5</h3></a>
+                <p class="summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, omnis quae nobis quia possimus totam optio consectetur corporis quisquam voluptate aut. Maxime dolorem iusto minima fugit voluptatibus accusamus neque pariatur.</p>
+                <p>27. veljače 2021.</p>
+            </div>
+        </article>
+
+    </div>
+
+</body>
+</html>
